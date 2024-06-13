@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Absensi Karyawan</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Absensi Karyawan Dinas Ketahanan Pangan</h1>
+    <form id="absensi-form">
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" required>
+      <br><br>
+      <label for="nip">NIP:</label>
+      <input type="text" id="nip" name="nip" required>
+      <br><br>
+      <label for="waktu">Waktu:</label>
+      <input type="datetime-local" id="waktu" name="waktu" required>
+      <br><br>
+      <label for="absensi">Absensi:</label><br>
+      <input type="radio" id="hadir" name="absensi" value="Hadir">
+      <label for="hadir">Hadir</label><br>
+      <input type="radio" id="izin" name="absensi" value="Izin">
+      <label for="izin">Izin</label><br>
+      <input type="radio" id="sakit" name="absensi" value="Sakit">
+      <label for="sakit">Sakit</label><br>
+      <button type="submit">Simpan</button>
+    </form>
+    <table id="absensi-table">
+      <thead>
+        <tr>
+          <th>NO</th>
+          <th>NAMA</th>
+          <th>NIP</th>
+          <th>WAKTU</th>
+          <th>KETERANGAN ABSENSI</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
